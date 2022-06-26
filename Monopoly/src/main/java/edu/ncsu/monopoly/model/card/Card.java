@@ -1,6 +1,6 @@
 package edu.ncsu.monopoly.model.card;
 
-public abstract class Card {
+public abstract class Card implements ICard {
 
     public static int TYPE_CHANCE = 1;
     public static int TYPE_CC = 2;
@@ -10,9 +10,7 @@ public abstract class Card {
         type = cardType;
     }
 
-    public abstract String getLabel();
-    public abstract void applyAction();
-
+    @Override
     public int getCardType() {
         return type;
     }
