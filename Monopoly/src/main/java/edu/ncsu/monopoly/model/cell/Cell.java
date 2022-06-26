@@ -23,7 +23,7 @@ public abstract class Cell {
 		return available;
 	}
 	
-	public abstract void playAction();
+	public abstract boolean playAction();
 
 	public void setAvailable(boolean available) {
 		this.available = available;
