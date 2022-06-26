@@ -6,7 +6,7 @@ public class FreeParkingCell extends Cell {
 		setName("Free Parking");
 	}
 
-	public boolean playAction() {
+	public boolean playAction(String msg) {
 		return true;
 	}
 }

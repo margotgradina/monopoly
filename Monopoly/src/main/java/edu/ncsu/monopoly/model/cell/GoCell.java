@@ -6,7 +6,7 @@ public class GoCell extends Cell {
 		setAvailable(false);
 	}
 
-	public boolean playAction() {
+	public boolean playAction(String msg) {
 		return true;
 	}
 	
