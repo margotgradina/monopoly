@@ -1,7 +1,6 @@
-package edu.ncsu.monopoly;
-
 import java.util.ArrayList;
 
+import edu.ncsu.monopoly.*;
 import junit.framework.TestCase;
 
 public class GameMasterTest extends TestCase {

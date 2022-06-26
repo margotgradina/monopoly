@@ -1,5 +1,7 @@
-package edu.ncsu.monopoly;
-
+import edu.ncsu.monopoly.GameBoardUtility;
+import edu.ncsu.monopoly.GameMaster;
+import edu.ncsu.monopoly.MockGUI;
+import edu.ncsu.monopoly.UtilityCell;
 import junit.framework.TestCase;
 
 public class UtilityCellTest extends TestCase {

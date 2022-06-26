@@ -1,5 +1,4 @@
-package edu.ncsu.monopoly;
-
+import edu.ncsu.monopoly.*;
 import junit.framework.TestCase;
 
 public class PlayerTest extends TestCase {

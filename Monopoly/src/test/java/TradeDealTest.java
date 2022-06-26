@@ -1,5 +1,6 @@
-package edu.ncsu.monopoly;
-
+import edu.ncsu.monopoly.GameMaster;
+import edu.ncsu.monopoly.Player;
+import edu.ncsu.monopoly.TradeDeal;
 import junit.framework.TestCase;
 
 public class TradeDealTest extends TestCase {

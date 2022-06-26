@@ -26,8 +26,8 @@ public abstract class Cell {
 	public void setAvailable(boolean available) {
 		this.available = available;
 	}
-	
-	void setName(String name) {
+
+	 void setName(String name) {
 		this.name = name;
 	}
 
