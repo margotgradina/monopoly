@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 
-import edu.ncsu.monopoly.*;
+import edu.ncsu.monopoly.gui.dialog.RespondDialog;
+import edu.ncsu.monopoly.gui.dialog.TradeDialog;
+import edu.ncsu.monopoly.model.gameboard.GameBoardFull;
+import edu.ncsu.monopoly.gui.MonopolyGUI;
+import edu.ncsu.monopoly.mock.MockGUI;
+import edu.ncsu.monopoly.model.TradeDeal;
+import edu.ncsu.monopoly.model.users.GameMaster;
+import edu.ncsu.monopoly.model.users.Player;
 import junit.framework.TestCase;
 
 public class GameMasterTest extends TestCase {

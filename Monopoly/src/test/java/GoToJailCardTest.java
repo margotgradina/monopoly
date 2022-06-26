@@ -1,4 +1,9 @@
-import edu.ncsu.monopoly.*;
+import edu.ncsu.monopoly.model.card.Card;
+import edu.ncsu.monopoly.model.card.JailCard;
+import edu.ncsu.monopoly.model.cell.Cell;
+import edu.ncsu.monopoly.model.gameboard.GameBoardCCJail;
+import edu.ncsu.monopoly.mock.MockGUI;
+import edu.ncsu.monopoly.model.users.GameMaster;
 import junit.framework.TestCase;
 
 public class GoToJailCardTest extends TestCase {

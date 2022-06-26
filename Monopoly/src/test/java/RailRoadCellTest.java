@@ -1,7 +1,7 @@
-import edu.ncsu.monopoly.GameBoardRailRoad;
-import edu.ncsu.monopoly.GameMaster;
-import edu.ncsu.monopoly.MockGUI;
-import edu.ncsu.monopoly.RailRoadCell;
+import edu.ncsu.monopoly.model.gameboard.GameBoardRailRoad;
+import edu.ncsu.monopoly.model.users.GameMaster;
+import edu.ncsu.monopoly.mock.MockGUI;
+import edu.ncsu.monopoly.model.cell.RailRoadCell;
 import junit.framework.TestCase;
 
 public class RailRoadCellTest extends TestCase {

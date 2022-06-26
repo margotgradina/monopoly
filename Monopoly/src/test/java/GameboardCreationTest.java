@@ -1,9 +1,9 @@
 import java.awt.Dimension;
 import java.util.List;
 
-import edu.ncsu.monopoly.GameBoard;
-import edu.ncsu.monopoly.GameBoard14;
-import edu.ncsu.monopoly.SimpleGameBoard;
+import edu.ncsu.monopoly.model.gameboard.GameBoard;
+import edu.ncsu.monopoly.model.gameboard.GameBoard14;
+import edu.ncsu.monopoly.model.gameboard.SimpleGameBoard;
 import junit.framework.TestCase;
 
 import edu.ncsu.monopoly.gui.GameBoardUtil;

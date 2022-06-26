@@ -1,7 +1,7 @@
-import edu.ncsu.monopoly.GameMaster;
-import edu.ncsu.monopoly.MockGUI;
-import edu.ncsu.monopoly.PropertyCell;
-import edu.ncsu.monopoly.SimpleGameBoard;
+import edu.ncsu.monopoly.model.users.GameMaster;
+import edu.ncsu.monopoly.mock.MockGUI;
+import edu.ncsu.monopoly.model.cell.PropertyCell;
+import edu.ncsu.monopoly.model.gameboard.SimpleGameBoard;
 import junit.framework.TestCase;
 
 public class PropertyCellTest extends TestCase {

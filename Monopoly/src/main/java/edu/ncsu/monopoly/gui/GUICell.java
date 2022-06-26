@@ -5,7 +5,10 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 
-import edu.ncsu.monopoly.*;
+import edu.ncsu.monopoly.gui.formatter.InfoFormatter;
+import edu.ncsu.monopoly.model.cell.Cell;
+import edu.ncsu.monopoly.model.users.GameMaster;
+import edu.ncsu.monopoly.model.users.Player;
 
 public class GUICell extends JPanel {
 

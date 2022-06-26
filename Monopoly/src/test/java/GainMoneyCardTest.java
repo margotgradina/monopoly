@@ -1,4 +1,8 @@
-import edu.ncsu.monopoly.*;
+import edu.ncsu.monopoly.model.card.Card;
+import edu.ncsu.monopoly.model.card.MoneyCard;
+import edu.ncsu.monopoly.model.gameboard.GameBoardCCGainMoney;
+import edu.ncsu.monopoly.mock.MockGUI;
+import edu.ncsu.monopoly.model.users.GameMaster;
 import junit.framework.TestCase;
 
 public class GainMoneyCardTest extends TestCase {

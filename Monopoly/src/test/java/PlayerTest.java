@@ -1,4 +1,10 @@
-import edu.ncsu.monopoly.*;
+import edu.ncsu.monopoly.model.cell.Cell;
+import edu.ncsu.monopoly.model.cell.PropertyCell;
+import edu.ncsu.monopoly.model.gameboard.GameBoard;
+import edu.ncsu.monopoly.model.gameboard.SimpleGameBoard;
+import edu.ncsu.monopoly.mock.MockGUI;
+import edu.ncsu.monopoly.model.users.GameMaster;
+import edu.ncsu.monopoly.model.users.Player;
 import junit.framework.TestCase;
 
 public class PlayerTest extends TestCase {

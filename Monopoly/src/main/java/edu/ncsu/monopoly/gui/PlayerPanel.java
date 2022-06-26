@@ -13,10 +13,10 @@ import javax.swing.JTextArea;
 import javax.swing.OverlayLayout;
 import javax.swing.border.BevelBorder;
 
-import edu.ncsu.monopoly.*;
-import edu.ncsu.monopoly.Card;
-import edu.ncsu.monopoly.GameMaster;
-import edu.ncsu.monopoly.Player;
+import edu.ncsu.monopoly.model.card.Card;
+import edu.ncsu.monopoly.model.users.GameMaster;
+import edu.ncsu.monopoly.model.users.Player;
+import edu.ncsu.monopoly.model.cell.Cell;
 
 public class PlayerPanel extends JPanel {
 
