@@ -3,6 +3,13 @@ package edu.ncsu.monopoly.model.gameboard;
 import edu.ncsu.monopoly.model.cell.PropertyCell;
 
 public class GameBoard14 extends GameBoard {
+
+	public static final String GREEN = "green";
+	public static final String YELLOW = "yellow";
+	public static final String PURPLE = "purple";
+	public static final String BLUE = "blue";
+	public static final String RED = "red";
+
 	public GameBoard14() {
 		super();
 		PropertyCell blue1 = new PropertyCell();
@@ -20,31 +27,31 @@ public class GameBoard14 extends GameBoard {
 		PropertyCell yellow2 = new PropertyCell();
 		
 		blue1.setName("Blue 1");
-        blue1.setColorGroup("blue");
+        blue1.setColorGroup(BLUE);
 		blue2.setName("Blue 2");
-        blue2.setColorGroup("blue");
+        blue2.setColorGroup(BLUE);
 		blue3.setName("Blue 3");
-        blue3.setColorGroup("blue");
+        blue3.setColorGroup(BLUE);
 		green1.setName("Green 1");
-        green1.setColorGroup("green");
+        green1.setColorGroup(GREEN);
 		green2.setName("Green 2");
-        green2.setColorGroup("green");
+        green2.setColorGroup(GREEN);
 		green3.setName("Green 3");
-        green3.setColorGroup("green");
+        green3.setColorGroup(GREEN);
 		red1.setName("Red 1");
-        red1.setColorGroup("red");
+        red1.setColorGroup(RED);
 		red2.setName("Red 2");
-        red2.setColorGroup("red");
+        red2.setColorGroup(RED);
 		red3.setName("Red 3");
-        red3.setColorGroup("red");
+        red3.setColorGroup(RED);
 		purple1.setName("Purple 1");
-        purple1.setColorGroup("purple");
+        purple1.setColorGroup(PURPLE);
 		purple2.setName("Purple 2");		
-        purple2.setColorGroup("purple");
+        purple2.setColorGroup(PURPLE);
 		yellow1.setName("Yellow 1");
-        yellow1.setColorGroup("yellow");
+        yellow1.setColorGroup(YELLOW);
 		yellow2.setName("Yellow 2");
-        yellow2.setColorGroup("yellow");
+        yellow2.setColorGroup(YELLOW);
 		
 		blue1.setPrice(100);
 		blue2.setPrice(100);

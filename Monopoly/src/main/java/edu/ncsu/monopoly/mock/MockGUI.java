@@ -11,12 +11,15 @@ public class MockGUI implements MonopolyGUI {
     private boolean[] btnTradeState = new boolean[2];
 
     public void enableEndTurnBtn(int playerIndex) {
+        //TODO
     }
 
     public void enablePlayerTurn(int playerIndex) {
+        //TODO
     }
 
     public void enablePurchaseBtn(int playerIndex) {
+        //TODO
     }
 	public int[] getDiceRoll() {
 		int roll[] = new int[2];
@@ -42,6 +45,7 @@ public class MockGUI implements MonopolyGUI {
     }
 
     public void movePlayer(int index, int from, int to) {
+        //why method is empty
     }
 
     public RespondDialog openRespondDialog(TradeDeal deal) {
@@ -73,6 +77,7 @@ public class MockGUI implements MonopolyGUI {
     }
 
     public void setRollDiceEnabled(boolean b) {
+        //TODO
     }
 
     public void setTradeEnabled(int index, boolean b) {
@@ -80,9 +85,11 @@ public class MockGUI implements MonopolyGUI {
     }
 
     public void showBuyHouseDialog(Player currentPlayer) {
+        //TODO
     }
 
     public void showMessage(String string) {
+        //TODO
     }
 
 	public int showUtilDiceRoll() {
@@ -92,8 +99,10 @@ public class MockGUI implements MonopolyGUI {
 	}
 
     public void startGame() {
+        //TODO
     }
 
 	public void update() {
+        //TODO
 	}
 }
