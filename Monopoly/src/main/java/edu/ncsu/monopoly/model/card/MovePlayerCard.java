@@ -7,11 +7,10 @@ import edu.ncsu.monopoly.model.cell.Cell;
 public class MovePlayerCard extends Card {
     
     private String destination;
-    private int type;
 
     public MovePlayerCard(String destination, int cardType) {
+        super(cardType);
         this.destination = destination;
-        this.type = cardType;
     }
 
     public void applyAction() {
@@ -29,10 +28,6 @@ public class MovePlayerCard extends Card {
         }
         System.out.println(diceValue);
         GameMaster.instance().movePlayer(currentPlayer, diceValue);
-    }
-
-    public int getCardType() {
-        return type;
     }
 
     public String getLabel() {
