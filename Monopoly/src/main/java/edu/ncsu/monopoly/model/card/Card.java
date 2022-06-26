@@ -6,7 +6,7 @@ public abstract class Card implements ICard {
     public static int TYPE_CC = 2;
     int type;
 
-    public Card(int cardType) {
+    protected Card(int cardType) {
         type = cardType;
     }
 

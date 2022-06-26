@@ -51,41 +51,33 @@ public class GUITradeDialog extends JDialog implements TradeDialog {
         contentPane.add(btnOK);
         contentPane.add(btnCancel);
         
-        btnCancel.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e) {
-                GUITradeDialog.this.hide();
-            }
+        btnCancel.addActionListener(e -> GUITradeDialog.this.hide());
+        
+        cboSellers.addItemListener(e -> {
+            Player player = (Player)e.getItem();
+            updatePropertiesCombo(player);
         });
         
-        cboSellers.addItemListener(new ItemListener(){
-            public void itemStateChanged(ItemEvent e) {
-                Player player = (Player)e.getItem();
-                updatePropertiesCombo(player);
+        btnOK.addActionListener(e -> {
+            int amount = 0;
+            try{
+                amount = Integer.parseInt(txtAmount.getText());
+            } catch(NumberFormatException nfe) {
+                JOptionPane.showMessageDialog(GUITradeDialog.this,
+                        "Amount should be an integer", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
             }
-        });
-        
-        btnOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                int amount = 0;
-                try{
-                    amount = Integer.parseInt(txtAmount.getText());
-                } catch(NumberFormatException nfe) {
-                    JOptionPane.showMessageDialog(GUITradeDialog.this,
-                            "Amount should be an integer", "Error", JOptionPane.ERROR_MESSAGE);
-                    return;
-                }
-                Cell cell = (Cell)cboProperties.getSelectedItem();
-                if(cell == null) return;
-                Player player = (Player)cboSellers.getSelectedItem();
-                Player currentPlayer = GameMaster.instance().getCurrentPlayer();
-                if(currentPlayer.getMoney() > amount) { 
-	                deal = new TradeDeal();
-	                deal.setAmount(amount);
-	                deal.setPropertyName(cell.getName());
-	                deal.setSellerIndex(GameMaster.instance().getPlayerIndex(player));
-                }
-                hide();
+            Cell cell = (Cell)cboProperties.getSelectedItem();
+            if(cell == null) return;
+            Player player = (Player)cboSellers.getSelectedItem();
+            Player currentPlayer = GameMaster.instance().getCurrentPlayer();
+            if(currentPlayer.getMoney() > amount) {
+                deal = new TradeDeal();
+                deal.setAmount(amount);
+                deal.setPropertyName(cell.getName());
+                deal.setSellerIndex(GameMaster.instance().getPlayerIndex(player));
             }
+            hide();
         });
         
         this.pack();
